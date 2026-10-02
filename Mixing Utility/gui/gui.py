@@ -120,12 +120,13 @@ class MainWindow(QMainWindow):
         self.label.setPixmap(pixmap)
         print("banana!")
 
+def run_app():
 # Create instance of QApplication, pass in sys.argv, (Python list containing CLI arguments passed to app)
-app = QApplication(sys.argv)
+    app = QApplication(sys.argv)
 
-# Create  instance of QWidget
-window = MainWindow()
-window.show()
+    # Create  instance of QWidget
+    window = MainWindow()
+    window.show()
 
-# Start the event loop
-app.exec()
+    # Start the event loop
+    sys.exit(app.exec())
